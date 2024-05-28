@@ -6,13 +6,23 @@ public class Job {
      private String description;
      private String minSalary;
      private String maxSalary;
+     private String location;
 
-    public Job(String title, Long id, String description, String minSalary, String maxSalary) {
-        this.title = title;
+    public Job(Long id, String title, String description, String minSalary, String maxSalary, String location) {
         this.id = id;
+        this.title = title;
         this.description = description;
         this.minSalary = minSalary;
         this.maxSalary = maxSalary;
+        this.location = location;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public String getMaxSalary() {
